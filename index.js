@@ -22,6 +22,6 @@ const runner = require("./runner");
 // runner.getDay(5).then((day) => runner.run(day))
 
 
-runner.run(8);
+runner.run(10);
 
 ("");
