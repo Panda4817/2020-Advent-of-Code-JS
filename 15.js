@@ -5,7 +5,8 @@ const part1 = data =>
     const length = nums.length;
     const turns = {};
     let last_number = 0;
-    const turn = 2020;
+    const turn = 2020; // part 1
+    // turn = 30000000 // part 2
     for (let i = 0; i<length; i++) {
       turns[nums[i]] = [];
       turns[nums[i]].push(i + 1);
@@ -26,6 +27,7 @@ const part1 = data =>
           turns[new_number] = [];
           turns[new_number].push(i)
         }
+        turns[new_number] = turns[new_number].splice(0, turns[new_number].length - 2)
         last_number = new_number;
       }
     }
@@ -36,5 +38,5 @@ const part1 = data =>
 
 module.exports = {
   part1,
-  //part2
+  //part2 with part 1
 };
