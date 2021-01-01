@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Panda4817/2020-Advent-of-Code-JS#readme",
   "dependencies": {
+    "@0xcmdr/numjs": "^0.16.1",
     "grammar-graph": "^3.1.1",
     "parsey": "^0.2.0"
   }
